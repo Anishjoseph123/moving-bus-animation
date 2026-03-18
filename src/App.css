@@ -1,0 +1,176 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+/* .animate-busMove {
+  animation: busMove 8s linear infinite;
+} */
+/* @keyframes busMove {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+} */
+/* 🚌 Bus moving across screen */
+/* @keyframes busMove {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+} */
+
+/* ☁️ Clouds movement */
+/* @keyframes cloudMove {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+} */
+
+/* 🛞 Wheel spinning */
+/* @keyframes wheelSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* 🚌 Smooth bouncing bus */
+/* @keyframes bounceSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+} */
+
+/* Utility classes */
+/* .animate-cloudMove {
+  animation: cloudMove 30s linear infinite;
+}
+
+.animate-wheelSpin {
+  animation: wheelSpin 1s linear infinite;
+}
+
+.animate-bounceSlow {
+  animation: bounceSlow 1s ease-in-out infinite;
+} */
+
+@keyframes busMove {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes cloudMove {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes wheelSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounceSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes smoke {
+  0% {
+    opacity: 0.6;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px) scale(1.5);
+  }
+}
+
+/* Classes */
+.animate-cloudMove {
+  animation: cloudMove 25s linear infinite;
+}
+.animate-wheelSpin {
+  animation: wheelSpin 1s linear infinite;
+}
+.animate-bounceSlow {
+  animation: bounceSlow 1s ease-in-out infinite;
+}
+.animate-smoke {
+  animation: smoke 2s ease-out infinite;
+}
+@keyframes passengerBounce {
+  0%,
+  100% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+.animate-passengerBounce {
+  animation: passengerBounce 1s ease-in-out infinite;
+}
+@keyframes rain {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.animate-rain {
+  animation: rain 0.7s linear infinite;
+}
+@keyframes snow {
+  0% {
+    transform: translateY(-10px) translateX(0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(50vh) translateX(10px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-10px);
+    opacity: 0;
+  }
+}
+
+.animate-snow {
+  animation: snow 5s linear infinite;
+}
