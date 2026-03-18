@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import { BsSpeedometer } from "react-icons/bs";
+import { FaRegSnowflake, FaRegStopCircle, FaTrafficLight } from "react-icons/fa";
+import { IoMdRainy } from "react-icons/io";
+import { IoSunnyOutline } from "react-icons/io5";
+import { WiDayCloudy } from "react-icons/wi";
 const BusMovement = () => {
   const [speed, setSpeed] = useState(8); // lower = faster
   const [running, setRunning] = useState(true);
@@ -94,9 +99,9 @@ const BusMovement = () => {
         </div>
         <button
           onClick={toggleLight}
-          className="mt-2 ml-2 bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
+          className="flex items-center justify-center mt-2 ml-2 bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
         >
-          Change Signal
+          <FaTrafficLight /> Change Signal
         </button>
 
         {/* Bus */}
@@ -145,39 +150,39 @@ const BusMovement = () => {
         <div className="flex justify-evenly items-center">
           <button
             onClick={handleAccelerate}
-            className="mt-2 bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
+            className="flex items-center justify-center mt-2 bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
           >
-            Accelerate
+            <BsSpeedometer /> Accelerate
           </button>
           <button
             onClick={handleBrake}
-            className="bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
+            className="flex items-center justify-center bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
           >
-            Brake
+            <FaRegStopCircle />Brake
           </button>
           <button
             onClick={() => setIsNight(!isNight)}
-            className="bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
+            className="flex items-center justify-center bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
           >
-            Toggle Day/Night
+            <WiDayCloudy /> Toggle Day/Night
           </button>
           <button
             onClick={() => setWeather("sunny")}
-            className="bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
+            className="flex items-center justify-center bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
           >
-            Sunny
+            <IoSunnyOutline /> Sunny
           </button>
           <button
             onClick={() => setWeather("rain")}
-            className="bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
+            className="flex items-center justify-center bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
           >
-            Rain
+            <IoMdRainy /> Rain
           </button>
           <button
             onClick={() => setWeather("snow")}
-            className="bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
+            className="flex items-center justify-center bg-[#0c3c60] rounded-xl h-[35px] w-[150px] text-white"
           >
-            Snow
+            <FaRegSnowflake /> Snow
           </button>
         </div>
       </div>
